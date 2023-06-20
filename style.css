@@ -1,5 +1,6 @@
 body {
   font-family: Lato, sans-serif;
+  font-weight: 400;
   margin: 0;
   min-height: 100vh;
   display: flex;
@@ -35,9 +36,34 @@ body {
 
 .hero {
   background-color: #252a34;
-  flex-grow: 1;
+  display: flex;
+  flex: 1;
+  /* flex-grow: 1; */
   padding: 8px 100px;
   border: 2px dotted lightgreen;
+}
+
+.hero .statement {
+  display: flex;
+  flex-direction: column;
+  color: #e2e3e4;
+}
+
+.hero .statement .tagline {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.hero .statement .text {
+  font-size: 12px;
+}
+
+.hero .statement button {
+  width: 120px;
+  background-color: #845ea8;
+  border: 0px;
+  padding: 6px;
+  border-radius: 8px;
 }
 
 .information {
@@ -50,26 +76,28 @@ body {
 .quote {
   background-color: #e2e3e4;
   color: #252a34;
-  flex-grow: 1;
+  flex-grow: 0;
   display: flex;
   flex-direction: column;
-  padding: 8px 100px;
+  padding: 0px 100px;
   border: 2px dotted lightgreen;
 }
 
 .quote .text {
-  font-size: 36px;
+  font-size: 24px;
   font-style: italic;
-  font-weight: light;
-  margin: 50px 50px 0px 50px;
-  border: 2px dotted blue;
+  font-weight: 100;
+  font-family: Arial, sans-serif;
+  margin: 50px 50px 5px 50px;
+  /* border: 2px dotted blue; */
 }
 
 .quote .atribution {
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 600;
   text-align: right;
-  margin: 0px 50px 50px 50px;
-  border: 2px dotted blue;
+  margin: 5px 50px 50px 50px;
+  /* border: 2px dotted blue; */
 }
 
 .call-to-action {
