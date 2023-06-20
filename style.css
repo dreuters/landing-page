@@ -5,7 +5,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .header {
@@ -133,10 +133,11 @@ body {
 .quote {
   background-color: #e2e3e4;
   color: #252a34;
-  flex-grow: 0;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   padding: 0px 100px;
+  justify-content: center;
   /* border: 2px dotted lightgreen; */
 }
 
@@ -158,10 +159,50 @@ body {
 }
 
 .call-to-action {
+  display: flex;
   background-color: white;
-  flex-grow: 1;
+  flex-grow: 4;
   padding: 8px 100px;
-  border: 2px dotted lightgreen;
+  justify-content: center;
+  /* border: 2px dotted lightgreen; */
+}
+
+.call-to-action .modal {
+  background: #845ea8;
+  width: 600px;
+  border-radius: 8px;
+  display: flex;
+  align-self: flex-start;
+  padding: 40px;
+  margin: 50px 0px;
+  color: #e2e3e4;
+  gap: 50px;
+}
+
+/* .call-to-action .modal .content {
+
+} */
+
+.call-to-action .modal .content .action {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.call-to-action .modal .content .text {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.call-to-action .modal button {
+  background: #845ea8;
+  border-radius: 8px;
+  border: 1px solid #e2e3e4;
+  width: 200px;
+  color: #e2e3e4;
+}
+
+.call-to-action .modal button:hover {
+  background: #c64a9b;
 }
 
 .footer {
