@@ -34,36 +34,65 @@ body {
   padding: 0px 8px;
 }
 
+.header a:hover {
+  color: white;
+}
+
 .hero {
   background-color: #252a34;
   display: flex;
+  justify-content: space-between;
   flex: 1;
-  /* flex-grow: 1; */
-  padding: 8px 100px;
-  border: 2px dotted lightgreen;
+  flex-grow: 0;
+  padding: 25px 100px;
+  /* border: 2px dotted lightgoldenrodyellow; */
 }
 
 .hero .statement {
   display: flex;
   flex-direction: column;
   color: #e2e3e4;
+  margin: 0px 40px 0px 0px;
+  /* border: 1px dotted lightcoral; */
 }
 
 .hero .statement .tagline {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 700;
+  margin: 0px 6px 6px 0px;
+  /* border: 1px dotted lightcyan; */
 }
 
 .hero .statement .text {
   font-size: 12px;
+  margin: 0px 6px 12px 0px;
+  /* border: 1px dotted lightcyan; */
 }
 
 .hero .statement button {
+  margin: 0px 6px 6px 0px;
   width: 120px;
   background-color: #845ea8;
+  color: #e2e3e4;
   border: 0px;
   padding: 6px;
   border-radius: 8px;
+}
+
+.hero .statement button:hover {
+  background-color: #c64a9b;
+}
+
+.hero .image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0px 20px 0px;
+  /* border: 1px dotted lightcyan; */
+}
+
+.hero .image img {
+  border: 1px solid #717272;
 }
 
 .information {
